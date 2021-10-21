@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Assista filmes gratuitamente ou a preço mínimo. O streaming mais barato da internet">
+  <meta name="keywords"
+    content="filme barato, filme de graça, assistir filmes, filmes nacionais, locadora popular, alugar filmes">
+  <meta name="author" content="Carolina Tardin">
+  <title>Locadora Popular</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Locadora Popular</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tela_filmes">Consultar</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="margem30">
+      <h1>Cadastrar filmes</h1>
+      <form action="" method="get" class="formulario">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Digite o título do filme</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" required>
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Digite o ano de lançamento do filme</label>
+          <input type="number" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3">
+          <label for="validationTextarea">Insira a sinopse do filme</label>
+          <textarea class="form-control" id="validationTextarea" required></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Insira a capa do filme</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <button type="button" class="btn btn-primary">Cadastrar</button>
+      </form>
+
+      <div id="tela_filmes"></div>
+      <h2>Filmes cadastrados</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr id="cabecalho-tabela">
+            <th>Título</th>
+            <th>Ano de lançamento</th>
+            <th>Sinopse</th>
+            <th>Imagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>O Poderoso Chefão</td>
+            <td>1972</td>
+            <td>Uma família mafiosa luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Mundial.
+              Uma
+              tentativa de assassinato deixa o chefão Vito Corleone incapacitade e força os filhos Michael e Sonny a
+              assumir
+              os negócios.</td>
+            <td>
+              <img src="https://br.web.img3.acsta.net/medias/nmedia/18/90/93/20/20120876.jpg"
+                alt="Capa do filme poderoso chefao, um homem de terno com estilo mafioso italiano"
+                title="Poderoso chefão" width="100px" height="80px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Três Homens em Conflito</td>
+            <td>1966</td>
+            <td>Durante a Guerra Civil Americana, um pistoleiro misterioso e dois estrangeiros decidem juntar suas
+              forças
+              para encontrar um tesouro escondido. Cada um dos homens conhece apenas uma parte da localização da
+              fortuna,
+              o que força essa parceria. O problema é que nenhum deles tem a intenção de dividir a riqueza.</td>
+            <td>
+              <img src="https://http2.mlstatic.com/D_NQ_NP_800865-MLB42234342999_062020-O.jpg"
+                alt="Capa do filme Três Homens em Conflito, um homem com estilo faroeste"
+                title="Três Homens em Conflito" width="100px" height="80px" /></td>
+          </tr>
+          <tr>
+            <td>As Branquelas</td>
+            <td>2004</td>
+            <td>Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que bandidos sejam presos em
+              uma apreensão de drogas. Como castigo, eles são forçados a escoltar um par de socialites nos Hamptons.
+              Porém, quando as meninas descobrem o plano da agência, se recusam a ir. Sem opções, Marcus e Kevin decidem
+              posar como as irmãs, transformando-se de homens afro-americanos em um par de loiras.</td>
+            <td>
+              <img src="https://upload.wikimedia.org/wikipedia/pt/d/de/White_chicks.jpeg"
+                alt="Capa do filme As branquelas, duas mulheres loiras segurando o distintivo" title="As branquelas"
+                width="100px" height="80px" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="footer">
+      Locadora Popular &copy; 2021
+    </footer>
+  </div>
+</body>
+</html>

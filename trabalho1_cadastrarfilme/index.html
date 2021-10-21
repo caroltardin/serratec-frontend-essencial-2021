@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assista filmes gratuitamente ou a preço mínimo. O streaming mais barato da internet">
+    <meta name="keywords" content="filme barato, filme de graça, assistir filmes, filmes nacionais,
+    locadora popular, alugar filmes">
+    <title>Locadora Popular</title>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <h1>Cadastrar filmes</h1>
+
+    <form action="" method="get">
+        <div>
+          <label for="input-titulo">Digite o título do filme</label>
+          <input type="text" id="input-titulo" minlength="4" maxlength="4" required/>
+        </div>
+        <div>
+          <label for="input-anofilme">Digite o ano de lançamento do filme</label>
+          <input type="number" id="input-anofilme" minlength="4" maxlength="4"/> 
+        </div>
+        <div>
+            <label for="input-sinopse">Insira a sinopse do filme</label>
+            <input type="text" id="input-sinopse" />
+          </div>
+        <div>
+           <label for="input-IMGcapa">Insira a capa do filme</label>
+           <input type="file" id="input-IMGcapa" />
+         </div>
+        <input type="submit" value="Cadastrar" />
+      </form>
+
+
+    <h2>Filmes cadastrados</h2>
+
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Ano de lançamento</th>
+            <th>Sinopse</th>
+            <th>Imagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>O Poderoso Chefão</td>
+            <td>1972</td>
+            <td>Uma família mafiosa luta para estabelecer sua supremacia nos Estados Unidos depois da Segunda Mundial. Uma tentativa de assassinato deixa o chefão Vito Corleone incapacitade e força os filhos Michael e Sonny a assumir os negócios.</td>
+            <td>
+              <img 
+              src="https://br.web.img3.acsta.net/medias/nmedia/18/90/93/20/20120876.jpg"
+              alt="Capa do filme poderoso chefao, um homem de terno com estilo mafioso italiano"
+              title="Poderoso chefão"
+              width="100px"
+              height="80px"
+              />
+            </td>
+
+          </tr>
+          <tr>
+            <td>Três Homens em Conflito</td>
+            <td>1966</td>
+            <td>Durante a Guerra Civil Americana, um pistoleiro misterioso e dois estrangeiros decidem juntar suas forças para encontrar um tesouro escondido. Cada um dos homens conhece apenas uma parte da localização da fortuna, o que força essa parceria. O problema é que nenhum deles tem a intenção de dividir a riqueza.</td>
+            <td>     
+              <img 
+              src="https://http2.mlstatic.com/D_NQ_NP_800865-MLB42234342999_062020-O.jpg"
+              alt="Capa do filme Três Homens em Conflito, um homem com estilo faroeste"
+              title="Três Homens em Conflito"
+              width="100px"
+              height="80px"
+              /></td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>
